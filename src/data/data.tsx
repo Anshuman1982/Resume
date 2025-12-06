@@ -1,6 +1,6 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
+  /**ArrowDownTrayIcon, */
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
@@ -9,23 +9,17 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+
+
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+
+import myPhoto from '../images/profile.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +38,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Anshuman_Portfolio',
+  description: "",
 };
 
 /**
@@ -69,28 +63,34 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
-  description: (
+  name: `Anshuman Banjara`,
+    description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100">B.Tech CSE (AIML) student</strong> who enjoys building
+        practical <strong className="text-stone-100">machine learning and data-driven applications</strong> that solve
+        real problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Recently I've worked on projects like a <strong className="text-stone-100">Customer Churn Predictor with GenAI suggestions</strong>,
+        <strong className="text-stone-100"> House Price Predictor</strong>, <strong className="text-stone-100">Student Score Predictor</strong>,
+        and a <strong className="text-stone-100">Resume Matcher app</strong>. I'm actively looking for internships in
+        ML, data, and software development roles.
       </p>
     </>
   ),
+
   actions: [
-    {
+   /**  
+    * add pdf of resume in public/assests than uncomment this to get downloaadedble resume on website. 
+    * 
+    * {
       href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
+    },*/ 
+    
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -99,264 +99,204 @@ export const heroData: Hero = {
   ],
 };
 
+
+
 /**
  * About section
  */
+
+
 export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  profileImageSrc: myPhoto,
+  description:
+    "I'm a B.Tech CSE (AIML) student from India who likes building practical machine learning and data-driven projects rather than just solving theoretical examples. " +
+    "So far I've worked on projects like a Customer Churn Predictor with GenAI suggestions, House Price Predictor, Student Score Predictor, and a Resume Matcher app. " +
+    "I focus on writing clean code, documenting my work properly, and pushing everything to GitHub so it's easy for others to review. " +
+    "I'm actively looking for internships in ML, data, and software development, and I use this site to track my progress, showcase projects, and make it easier for recruiters to see what I can actually do.",
+
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Jodhpur ,Rajasthan', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Machine Learning, reading , New tech ', Icon: SparklesIcon},
+    {label: 'Study', text: 'B.Tech CSE (AIML)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Machine Learning trainee (project-based training & self projects)', Icon: BuildingOffice2Icon},
   ],
 };
+
+
 
 /**
  * Skills section
  */
+
+
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'Python', level: 8 },
+      { name: 'C', level: 7 },
+      { name: 'Java', level: 5 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Machine Learning & Data',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      { name: 'Scikit-learn', level: 7 },
+      { name: 'Pandas', level: 8 },
+      { name: 'NumPy', level: 7 },
+      { name: 'Matplotlib', level: 6 },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Tools & Frameworks',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      { name: 'Streamlit', level: 8 },
+      { name: 'Git & GitHub', level: 7 },
+      { name: 'Jupyter Notebook', level: 8 },
+      { name: 'VS Code', level: 8 },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Web Basics',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'HTML', level: 6 },
+      { name: 'CSS', level: 5 },
+      { name: 'JavaScript (Basics)', level: 4 },
+    ],
+  },
+  {
+    name: 'Currently Learning',
+    skills: [
+      { name: 'React', level: 3 },
+      { name: 'Next.js', level: 2 },
     ],
   },
 ];
+ 
+
 
 /**
  * Portfolio section
  */
+
+
+
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'House Price Predictor',
+    description:
+      'A regression-based ML model that predicts house prices using features like area, rooms, and location. Includes clean EDA, training, and deployment.',
+    url: 'https://github.com/Anshuman1982/House-Price-Predictor', 
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Student Score Predictor',
+    description:
+      'Predicts student exam scores from study hours using a simple but well-executed ML pipeline. Good beginner-level ML project with clean documentation.',
+    url: 'https://github.com/Anshuman1982/Student-performance-Predictor', 
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Customer Churn Predictor + GenAI Suggestions',
+    description:
+      'Predicts customer churn and generates actionable retention strategies using a machine learning model. Built with scikit-learn and a GenAI layer.',
+    url: 'https://github.com/Anshuman1982/customer-churn-predictor-genai', 
+    image: porfolioImage1,
+  },
+  {
+    title: 'Resume Matcher App ',
+    description:
+      'Compares candidate resumes with job descriptions and calculates match percentage along with skill insights. Built using NLP and Streamlit.',
+    url: 'https://github.com/Anshuman1982/Resume-Matcher',
     image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
+
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section --
  */
+
+
+
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2022 - Present',
+    location: 'Jodhpur, Rajasthan',
+    title: 'B.Tech in Computer Science (AIML)',
+    content: (
+      <p>
+        Studying Artificial Intelligence and Machine Learning with a focus on practical implementation through
+        projects. Worked on regression models, classification models, data preprocessing, and ML deployment basics.
+      </p>
+    ),
   },
 ];
+
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'June 2025 - July 2025',
+    location: 'Regex Software (Remote/Training)',
+    title: 'Machine Learning Trainee',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Completed hands-on AIML training focused on building real machine learning pipelines. Worked on data
+        preprocessing, model training, and evaluation, documented through my summer-regex GitHub repository. Built and deployed Nex Bot with API integration and AWS hosting, gaining experience with cloud deployment. Strengthened practical skills in Python, Pandas, NumPy, scikit-learn, basic deep learning, Jupyter Notebook, and Git/GitHub workflows.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2024 - Present',
+    location: 'Jodhpur, Rajasthan',
+    title: 'Independent Machine Learning Projects',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Developed end-to-end ML applications including a Resume Matcher App, Customer Churn Predictor with a GenAI
+        suggestion layer, House Price Predictor, and Student Score Predictor. Focused on clean data pipelines, model
+        experimentation, evaluation, and deployment-ready project structures. All work is documented and maintained on
+        GitHub.
       </p>
     ),
   },
 ];
 
-/**
- * Testimonial section
- */
+/** Testimonial section (need to update in future)*/
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Coming soon',
+      text: 'I am currently focused on building real-world experience through projects, internships, and collaborations. I will add testimonials from mentors, teammates, and managers here as I work with more people in the industry.',
+      
     },
   ],
 };
-
-/**
+/*
  * Contact section
  */
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description:
+    'The best way to reach me is by email. I am open to internship opportunities in machine learning, data, and software development, as well as collaboration on interesting projects.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'anshumanbanjara83@gmail.com', 
+      href: 'mailto:anshumanbanjara83@gmail.com', 
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Jodhpur, Rajasthan, India',
+      href: 'https://www.google.com/maps/place/Jodhpur,+Rajasthan,+India',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Anshuman1982',
+      href: 'https://github.com/Anshuman1982',
     },
   ],
 };
@@ -365,9 +305,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Anshuman1982' },
+  {
+    label: 'LinkedIn',
+    Icon: LinkedInIcon,
+    href: 'www.linkedin.com/in/anshuman-banjara-9a7640290',
+  },
 ];
