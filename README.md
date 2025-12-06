@@ -1,84 +1,122 @@
-# React JS Resume Website Template
+# Anshuman Banjara – Portfolio Website
 
-![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')
+This is my personal portfolio website built using **Next.js**, customized from an open-source template. It showcases my machine learning projects, skills, experience, and contact details in a clean, professional layout.
 
-<div align="center">
+### 🔗 Live Site  
+https://your-vercel-url-here.vercel.app
 
-<img alt="GitHub release (latest by date including pre-releases" src="https://img.shields.io/github/v/release/tbakerx/react-resume-template?include_prereleases">
+---
 
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tbakerx/react-resume-template?style=flat">
+## 🚀 Features
 
-<img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/tbakerx/react-resume-template?style=flat&color=success">
+- Clean, modern portfolio layout  
+- Editable sections (Hero, About, Skills, Projects, Experience, Contact)  
+- Fully responsive design  
+- Supports custom profile images and favicons  
+- Deployed on Vercel  
+- Minimalistic footer and dark UI  
+- Easy to update through a single data file
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/tbakerx/react-resume-template?style=flat&color=yellow">
+---
 
-<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/tbakerx/react-resume-template/react?style=flat">
+## 🧠 Tech Stack
 
-<img alt="Github Repo Sponsors" src="https://img.shields.io/github/sponsors/tbakerx?style=flat&color=blueviolet">
+- **Next.js 14**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Heroicons**
+- **Vercel**
+- **ESLint + Prettier**
 
-## React based template for software developer-focused resume websites
+---
 
-</div>
+## 📂 File Structure Overview
 
-### View a [live demo here.](https://reactresume.com)
+src/
+├── components/ # UI components
+├── data/ # Main editable data file (edit this!)
+├── images/ # Profile image + static assets
 
-#### If this template has helped you and you'd like to support my work, feel free to [♥️ Sponsor](https://github.com/sponsors/tbakerx) the project
+public/
+├── favicon.ico # Custom favicon
+├── site.webmanifest # Web manifest metadata
 
-### 🎉 Version 2 is here! New features:
-1. Completely rebuilt with React and full typescript support
-2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
-3. Styled entirely with [TailwindCss](https://tailwindcss.com/)
-4. Re-organized data population file for customizing site.
-5. Significant improvement/modernization of all site sections
- 
-**Looking for the old version? You can find it [here.](https://github.com/tbakerx/react-resume-template/releases/tag/v1.0.0)**
 
-## Description
+All content (name, about, skills, projects, contact) is editable through:  
+`src/data/data.tsx`
 
-This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and server-side rendered to ensure fast loading and a clean UI on any device. Read on to learn how to make it your own.
+---
 
-## Make it Your Own!
+## 🛠️ Local Development
 
-### 1. Make sure you have what you need
+### 1. Clone the repo
 
-To build this website, you will need to have the latest stable versions of Node and Yarn downloaded and installed on your machine. If you don't already have them, you can get Node [here,](https://nodejs.org/en/download/) and Yarn [here.](https://yarnpkg.com/getting-started/install)
+```bash
+git clone https://github.com/Anshuman1982/your-repo-name.git
+cd your-repo-name
 
-### 2. Fork and download this repo (and star if you like!)
 
-Next, find the `Fork` button in the top right of this page. This will allow you to make your own copy, for more info on forking repo's see [here.](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) After this, download to your development machine using the green `Code` button at the top of the repo page.
+2. Install dependencies
+yarn install
 
-### 3. Install dependencies and run
+3. Run the development server
+yarn dev
 
-Once you have your own copy of this repo forked and downloaded, open the folder in your favorite terminal and run `yarn install` to install dependencies. Following this, run `yarn dev` to run the project. In your terminal you should be given the url of the running instance (usually http://localhost:3000 unless you have something else running).
 
-### 4. Customize the data to make it your own
+Your site will be available at:
+http://localhost:3000
 
-All of the data for the site is driven via a file at `/src/data/data.tsx`. This is where you'll find the existing content, and updating the values here will be reflected on the site. If you have the site running as described above, you should see these changes reflected on save. The data types for all of these items are given in the same folder in the `dataDef.ts` file. Example images can be found at `src/images/` and are imported in the data file. To change, simply update these images using the same name and location, or add new images and update the imports. 
+📦 Deployment (Vercel)
 
-### 5. Hook up contact form
-Due to the variety of options available for contact form providers, I've hooked up the contact form only so far as handling inputs and state. Form submission and the actual sending of the email is open to your own implementation. My personal recommendation for email provider is [Sendgrid.](https://sendgrid.com/)
+Push your latest changes to GitHub
 
-### 6. Make any other changes you like
+Import the repository into Vercel
 
-Of course, all of the code is there and nothing is hidden from you so if you would like to make any other styling/data changes, feel free!
+Click Deploy
 
-### 7. Deploy to Vercel and enjoy your new Resume Website
+Update the live site link in this README
 
-Deploying your new site to Vercel is simple, and can be done by following their guide [here.](https://vercel.com/guides/deploying-nextjs-with-vercel) When you're all done and the build succeeds, you should be given a url for your live site, go there and you'll see your new personal resume website! Congratulations!
+💼 Customization Guide
+Profile Image
 
-## Project Created & Maintained By
+Place a .webp or .jpg file inside:
 
-### Tim Baker
+src/images/profile.webp
 
-<a href="https://twitter.com/timbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a><a href="https://instagram.com/tbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
 
-[![GitHub followers](https://img.shields.io/github/followers/tbakerx.svg?style=social&label=Follow)](https://github.com/tbakerx/)
+Then update the import at the top of data.tsx.
 
-## Stargazers
+Skills
 
-[![Stargazers repo roster for @tbakerx/react-resume-template](https://reporoster.com/stars/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/stargazers)
+Edit the skills array in src/data/data.tsx.
 
-## Forkers
+Projects
 
-[![Forkers repo roster for @tbakerx/react-resume-template](https://reporoster.com/forks/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/network/members)
+Update the portfolioItems array with your own project details and GitHub links.
+
+Contact Info
+
+Modify the contact object with your email, location, GitHub, and LinkedIn.
+
+Footer
+
+Customized inside src/components/sections/Footer.tsx.
+
+📜 License & Attribution
+
+This website is adapted from the React Resume Template
+by Tim Baker, licensed under the MIT License.
+
+Original template repository:
+https://github.com/tbakerx/react-resume-template
+
+All modifications and customizations are by Anshuman Banjara.
+
+✉️ Contact Me
+
+📧 anshumanbanjara83@gmail.com
+🔗 GitHub: https://github.com/Anshuman1982
+
+🔗 LinkedIn: www.linkedin.com/in/anshuman-banjara-9a7640290 
 
