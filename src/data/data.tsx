@@ -9,16 +9,12 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-
-
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-
 import myPhoto from '../images/profile.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -39,7 +35,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Anshuman_Portfolio',
-  description: "",
+  description: '',
 };
 
 /**
@@ -64,24 +60,26 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Anshuman Banjara`,
-    description: (
+  description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">B.Tech CSE (AIML) student</strong> who enjoys building
-        practical <strong className="text-stone-100">machine learning and data-driven applications</strong> that solve
-        real problems.
+        I'm a <strong className="text-stone-100">B.Tech CSE (AIML) student</strong> who enjoys building practical{' '}
+        <strong className="text-stone-100">machine learning and data-driven applications</strong> that solve real
+        problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Recently I've worked on projects like a <strong className="text-stone-100">Customer Churn Predictor with GenAI suggestions</strong>,
-        <strong className="text-stone-100"> House Price Predictor</strong>, <strong className="text-stone-100">Student Score Predictor</strong>,
-        and a <strong className="text-stone-100">Resume Matcher app</strong>. I'm actively looking for internships in
-        ML, data, and software development roles.
+        Recently I've worked on projects like a{' '}
+        <strong className="text-stone-100">Customer Churn Predictor with GenAI suggestions</strong>,
+        <strong className="text-stone-100"> House Price Predictor</strong>,{' '}
+        <strong className="text-stone-100">Student Score Predictor</strong>, and a{' '}
+        <strong className="text-stone-100">Resume Matcher app</strong>. I'm actively looking for internships in ML,
+        data, and software development roles.
       </p>
     </>
   ),
 
   actions: [
-   /**  
+    /**  
     * add pdf of resume in public/assests than uncomment this to get downloaadedble resume on website. 
     * 
     * {
@@ -89,8 +87,8 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },*/ 
-    
+    },*/
+
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -99,12 +97,9 @@ export const heroData: Hero = {
   ],
 };
 
-
-
 /**
  * About section
  */
-
 
 export const aboutData: About = {
   profileImageSrc: myPhoto,
@@ -120,89 +115,86 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Machine Learning, reading , New tech ', Icon: SparklesIcon},
     {label: 'Study', text: 'B.Tech CSE (AIML)', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Machine Learning trainee (project-based training & self projects)', Icon: BuildingOffice2Icon},
+    {
+      label: 'Employment',
+      text: 'Machine Learning trainee (project-based training & self projects)',
+      Icon: BuildingOffice2Icon,
+    },
   ],
 };
-
-
 
 /**
  * Skills section
  */
 
-
 export const skills: SkillGroup[] = [
   {
     name: 'Programming Languages',
     skills: [
-      { name: 'Python', level: 8 },
-      { name: 'C', level: 7 },
-      { name: 'Java', level: 5 },
+      {name: 'Python', level: 8},
+      {name: 'C', level: 7},
+      {name: 'Java', level: 5},
     ],
   },
   {
     name: 'Machine Learning & Data',
     skills: [
-      { name: 'Scikit-learn', level: 7 },
-      { name: 'Pandas', level: 8 },
-      { name: 'NumPy', level: 7 },
-      { name: 'Matplotlib', level: 6 },
+      {name: 'Scikit-learn', level: 7},
+      {name: 'Pandas', level: 8},
+      {name: 'NumPy', level: 7},
+      {name: 'Matplotlib', level: 6},
     ],
   },
   {
     name: 'Tools & Frameworks',
     skills: [
-      { name: 'Streamlit', level: 8 },
-      { name: 'Git & GitHub', level: 7 },
-      { name: 'Jupyter Notebook', level: 8 },
-      { name: 'VS Code', level: 8 },
+      {name: 'Streamlit', level: 8},
+      {name: 'Git & GitHub', level: 7},
+      {name: 'Jupyter Notebook', level: 8},
+      {name: 'VS Code', level: 8},
     ],
   },
   {
     name: 'Web Basics',
     skills: [
-      { name: 'HTML', level: 6 },
-      { name: 'CSS', level: 5 },
-      { name: 'JavaScript (Basics)', level: 4 },
+      {name: 'HTML', level: 6},
+      {name: 'CSS', level: 5},
+      {name: 'JavaScript (Basics)', level: 4},
     ],
   },
   {
     name: 'Currently Learning',
     skills: [
-      { name: 'React', level: 3 },
-      { name: 'Next.js', level: 2 },
+      {name: 'React', level: 3},
+      {name: 'Next.js', level: 2},
     ],
   },
 ];
- 
-
 
 /**
  * Portfolio section
  */
-
-
 
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'House Price Predictor',
     description:
       'A regression-based ML model that predicts house prices using features like area, rooms, and location. Includes clean EDA, training, and deployment.',
-    url: 'https://github.com/Anshuman1982/House-Price-Predictor', 
+    url: 'https://github.com/Anshuman1982/House-Price-Predictor',
     image: porfolioImage2,
   },
   {
     title: 'Student Score Predictor',
     description:
       'Predicts student exam scores from study hours using a simple but well-executed ML pipeline. Good beginner-level ML project with clean documentation.',
-    url: 'https://github.com/Anshuman1982/Student-performance-Predictor', 
+    url: 'https://github.com/Anshuman1982/Student-performance-Predictor',
     image: porfolioImage3,
   },
   {
     title: 'Customer Churn Predictor + GenAI Suggestions',
     description:
       'Predicts customer churn and generates actionable retention strategies using a machine learning model. Built with scikit-learn and a GenAI layer.',
-    url: 'https://github.com/Anshuman1982/customer-churn-predictor-genai', 
+    url: 'https://github.com/Anshuman1982/customer-churn-predictor-genai',
     image: porfolioImage1,
   },
   {
@@ -214,12 +206,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-
 /**
  * Resume section --
  */
-
-
 
 export const education: TimelineItem[] = [
   {
@@ -228,13 +217,12 @@ export const education: TimelineItem[] = [
     title: 'B.Tech in Computer Science (AIML)',
     content: (
       <p>
-        Studying Artificial Intelligence and Machine Learning with a focus on practical implementation through
-        projects. Worked on regression models, classification models, data preprocessing, and ML deployment basics.
+        Studying Artificial Intelligence and Machine Learning with a focus on practical implementation through projects.
+        Worked on regression models, classification models, data preprocessing, and ML deployment basics.
       </p>
     ),
   },
 ];
-
 
 export const experience: TimelineItem[] = [
   {
@@ -244,7 +232,10 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Completed hands-on AIML training focused on building real machine learning pipelines. Worked on data
-        preprocessing, model training, and evaluation, documented through my summer-regex GitHub repository. Built and deployed Nex Bot with API integration and AWS hosting, gaining experience with cloud deployment. Strengthened practical skills in Python, Pandas, NumPy, scikit-learn, basic deep learning, Jupyter Notebook, and Git/GitHub workflows.
+        preprocessing, model training, and evaluation, documented through my summer-regex GitHub repository. Built and
+        deployed Nex Bot with API integration and AWS hosting, gaining experience with cloud deployment. Strengthened
+        practical skills in Python, Pandas, NumPy, scikit-learn, basic deep learning, Jupyter Notebook, and Git/GitHub
+        workflows.
       </p>
     ),
   },
@@ -270,7 +261,6 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Coming soon',
       text: 'I am currently focused on building real-world experience through projects, internships, and collaborations. I will add testimonials from mentors, teammates, and managers here as I work with more people in the industry.',
-      
     },
   ],
 };
@@ -285,8 +275,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'anshumanbanjara83@gmail.com', 
-      href: 'mailto:anshumanbanjara83@gmail.com', 
+      text: 'anshumanbanjara83@gmail.com',
+      href: 'mailto:anshumanbanjara83@gmail.com',
     },
     {
       type: ContactType.Location,
@@ -305,7 +295,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Anshuman1982' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Anshuman1982'},
   {
     label: 'LinkedIn',
     Icon: LinkedInIcon,

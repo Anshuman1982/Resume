@@ -1,7 +1,7 @@
-import { /**BoltIcon */ChevronUpIcon } from '@heroicons/react/24/solid';
-import { FC, memo } from 'react';
+import {/**BoltIcon */ ChevronUpIcon} from '@heroicons/react/24/solid';
+import {FC, memo} from 'react';
 
-import { SectionId } from '../../data/data';
+import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
 const currentYear = new Date().getFullYear();
@@ -21,9 +21,7 @@ const Footer: FC = memo(() => (
       </div>
 
       {/* CLEAN FOOTER TEXT */}
-      <span className="text-sm text-neutral-500">
-        © {currentYear} Anshuman Banjara
-      </span>
+      <span className="text-sm text-neutral-500">© {currentYear} Anshuman Banjara</span>
     </div>
   </div>
 ));
