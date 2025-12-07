@@ -3,7 +3,7 @@
 This is my personal portfolio website built using **Next.js**, customized from an open-source template. It showcases my machine learning projects, skills, experience, and contact details in a clean, professional layout.
 
 ### 🔗 Live Site  
-https://your-vercel-url-here.vercel.app
+https://resume-portfolio-indol.vercel.app/
 
 ---
 
